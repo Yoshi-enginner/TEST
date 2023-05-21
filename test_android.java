@@ -16,8 +16,8 @@ public class Mycanvas extends View {
         super(context);
      path = new Path();
      paint =new Paint();
-     paint =setColor(Color.blue);
-     paint =setStrokeWitdh(10);
+     paint.setColor(Color.BLUE);
+     paint.setStrokeWidth(10);
     }
 
     @Override
@@ -41,7 +41,7 @@ public class Mycanvas extends View {
                 path.lineTo(x,y);
                 invalidate();
                 break;
-            case Motionevent.ACTION_UP:
+            case MotionEvent.ACTION_UP:
                 break;
             }
         return true;
